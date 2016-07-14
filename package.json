@@ -1,12 +1,17 @@
 {
-  "name": "testso",
-  "version": "1.0.0",
-  "description": "",
+  "name": "nodejs_save_kickstarter",
+  "version": "0.0.1",
+  "description": "Simple Node.js Backend and jQuery HTML Web Interface to keep saving data to server in a text file.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "alokrajiv",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
 }
