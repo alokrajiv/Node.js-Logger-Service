@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SAVER</title>
+</head>
+<body>
+    LAST SAVE: <span id="res">NOT KNOWN</span>
+    <form id="myform">
+        Data:<input name="data">
+        <button type="submit">SAVE</button>
+    </form>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script>
+    $("#myform").submit(function(e) {
+        e.preventDefault();
+        var data = $(this).serialize();
+        var url = "http://localhost:9001/data";
+        $.post(url, data, function(resp) {
+                $("#res").html("SAVED at " + (new Date()));
+                console.log(resp);
+                });
+        });
+</script>
+</html>
