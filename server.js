@@ -23,4 +23,6 @@ app.post('/data/', function (req, res) {
         });
     });
 });
-app.listen(process.env.PORT || 9001);
+app.listen(process.env.PORT || 9001, function(){
+    console.log("Server running..");
+});
