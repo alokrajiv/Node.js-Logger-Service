@@ -6,8 +6,10 @@ Simple Node.js Backend and jQuery HTML Web Interface to keep saving data to serv
 
 On the console type:
 
+    git clone https://github.com/alokrajiv/nodejs_save_kickstarter.git
+    cd  nodejs_save_kickstarter
     npm i express body-parser morgan
-    node app.js
+    npm start
 
 NOw you should see `Server running...`.
 
